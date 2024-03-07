@@ -1,0 +1,23 @@
+.footer-navigation {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    margin: 0 auto;
+
+    @media (max-width: $tablet-max-width) {
+      margin: 0;
+    }
+
+    &--desktop {
+      @media (max-width: $mobile-max-width) {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+  }
+}

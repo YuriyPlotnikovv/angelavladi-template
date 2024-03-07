@@ -1,0 +1,13 @@
+.about {
+  &__slider-about {
+    display: block;
+    width: 100%;
+
+    box-shadow: $boxShadow;
+  }
+
+  &__info {
+    background-color: $colorGrayTwo;
+    box-shadow: $boxShadow;
+  }
+}

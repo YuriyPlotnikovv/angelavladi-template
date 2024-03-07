@@ -1,0 +1,12 @@
+.slider-main {
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    max-width: $desktop-max-width;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+  }
+}

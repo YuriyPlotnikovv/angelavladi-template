@@ -1,0 +1,10 @@
+.order {
+  &__instructions {
+    box-shadow: $boxShadow;
+  }
+
+  &__fitting {
+    background-color: $colorGrayTwo;
+    box-shadow: $boxShadow;
+  }
+}

@@ -1,0 +1,30 @@
+.breadcrumbs {
+  &__item {
+    position: relative;
+
+    &:not(:first-of-type) {
+      &::before {
+        position: absolute;
+        left: -25px;
+        top: calc(50% + 1px);
+
+        display: block;
+        width: 20px;
+        height: 1px;
+
+        background-color: $colorBlackThree;
+
+        content: "";
+      }
+    }
+    
+    &--current {
+      opacity: 0.8;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 5px;
+  }
+}

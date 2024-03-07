@@ -1,0 +1,17 @@
+.slider-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: $desktop-max-width;
+  margin: 0 auto;
+
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+.main-order {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
+
+    @include block-position;
+  }
+
+  &__title {
+    display: block;
+    margin: 0 auto 10px;
+
+    @media (max-width: $tablet-max-width) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    
+    @media (max-width: $tablet-max-width) {
+      font-size: 16px;
+    }
+  }
+}

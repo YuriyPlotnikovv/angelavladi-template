@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Раздел каталога | AngelaVladi - дизайнерская одежда г. Краснодар</title>
+  <meta name="description"
+    content="Каталог дизайнерской одежды, дизайнерская одежда AngelaVladi на заказ по вашим меркам и эскизам в г. Краснодар">
+  <link href="./styles/vendor/swiper-bundle.css" rel="stylesheet">
+  <link href="./styles/style.min.css" rel="stylesheet">
+</head>
+
+<body class="page__body">
+
+  @import "header.html"
+
+  <main class="page__main catalog">
+    <section class="page__heading heading">
+      <div class="heading__wrapper">
+        <h1 class="heading__title">Раздел каталога</h1>
+
+        @import "breadcrumbs.html"
+      </div>
+    </section>
+
+    <section class="catalog__products products">
+      <div class="products__wrapper">
+        <ul class="products__list">
+          @import "product-item.html"
+          @import "product-item.html"
+          @import "product-item.html"
+          @import "product-item.html"
+          @import "product-item.html"
+          @import "product-item.html"
+          @import "product-item.html"
+          @import "product-item.html"
+          @import "product-item.html"
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  @import "footer.html"
+
+  <script src="./scripts/vendor/swiper-bundle.js"></script>
+  <script src="./scripts/script.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+.page {
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    background-color: $colorGrayTwo;
+    box-shadow: $boxShadow;
+  }
+
+  &__breadcrumbs {
+    display: flex;
+    gap: 30px;
+
+    font-style: italic;
+    text-transform: lowercase;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }  
+
+  &__slider {
+    background-color: $colorGrayTwo;
+    box-shadow: $boxShadow;
+  }
+  
+  &__footer {
+    color: $colorWhite;
+    
+    background-color: $colorBlackThree;
+  }
+}

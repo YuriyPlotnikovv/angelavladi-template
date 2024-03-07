@@ -1,0 +1,150 @@
+.button {
+  display: block;
+  position: relative;
+  
+  font-weight: 500;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    z-index: 2;
+
+    display: block;
+    width: 18px;
+    height: 18px;
+
+    background-image: $iconArrow;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transform: rotate(180deg) translateY(50%);
+
+    content: "";
+
+    @media (max-width: $tablet-max-width) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  &--link {
+    position: relative;
+
+    margin: 0 auto;
+    padding: 0 30px 10px 0;
+  
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+      width: 30%;
+      height: 1px;
+
+      background-color: $colorRed;
+
+      content: "";
+      transition: 0.5s ease-in-out;
+    }
+
+    &::after {
+      top: 35%;
+      transition: 0.5s ease-in-out;
+    }
+
+    &:hover, &:active {
+      transition: 0.2s ease-in-out;
+
+      &::before {
+        width: 100%;
+        transition: 0.5s ease-in-out;
+      }
+
+      &::after {
+        right: -5px;
+        transition: 0.5s ease-in-out;
+      }
+    }
+    
+    &:active {
+      transform: scale(95%);
+      transition: 0.2s ease-in-out;
+    }
+
+    @media (max-width: $tablet-max-width) {
+      padding: 0 25px 5px 0;
+      font-size: 16px;
+    }
+  }
+
+  &--left, &--right {
+    &::after {
+      top: 0;
+      left: 0;
+      z-index: 2;
+
+      width: 45px;
+      height: 45px;
+
+      transform: none;
+    }
+  }
+
+  &--right {
+    transform: rotate(180deg);
+  }
+
+  &--card {
+    padding: 10px 50px;
+    border-radius: 10px;
+
+    align-self: end;
+    font-size: 14px;
+    color: $colorWhite;
+
+    text-shadow: $textShadow;
+    background: $buttonGradient;
+    box-shadow: $buttonShadow;
+
+    transition: 0.2s ease-in-out;
+
+    &:hover:not(:active) {
+      background: $buttonGradientHover;
+      opacity: 1;
+    }
+
+    &:active {
+      top: 1px;
+      background: $buttonGradientActive;
+      box-shadow: $buttonShadowActive;
+      opacity: 1;
+    }
+  }
+
+  &--menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+
+    background-image: $iconMenu;
+    background-size: cover;
+
+    @media (max-width: $mobile-max-width) {
+      display: block;
+
+      &-close {
+        background-image: $iconClose;
+      }
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+}

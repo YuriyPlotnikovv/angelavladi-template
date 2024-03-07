@@ -1,0 +1,11 @@
+.heading {
+  &__wrapper {
+    @include block-position;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-size: 38px;
+  }
+}

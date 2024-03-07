@@ -1,0 +1,23 @@
+.colors {
+  &__item {
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid $colorGray;
+    border-radius: 50%;
+  
+    &--white {
+      background-color: $colorWhite;
+    }
+    &--red {
+      background-color: $colorRed;
+    }
+    &--black {
+      background-color: $colorBlack;
+    }
+    &--yellow {
+      background-color: $colorYellow;
+    }
+  }
+}

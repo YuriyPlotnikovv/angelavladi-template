@@ -1,0 +1,22 @@
+.main {
+  &__slider-main {
+    display: block;
+    width: 100%;
+    height: 500px;
+
+    box-shadow: $boxShadow;
+  }
+
+  &__catalog {
+    background-color: $colorGrayTwo;
+    box-shadow: $boxShadow;
+  }
+
+  &__info {
+    box-shadow: $boxShadow;
+  }
+
+  &__order {
+    box-shadow: $boxShadow;
+  }
+}

@@ -1,0 +1,42 @@
+.slider-promo {
+  &__wrapper {
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include block-position;
+  }
+
+  &__title {
+    display: block;
+    align-self: center;
+    margin-bottom: 30px;
+
+    @media (max-width: $tablet-max-width) {
+      font-size: 24px;
+    }
+  }
+
+  &__item {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    height: 400px;
+    padding: 10px;
+
+    border-radius: 10px;
+    background-color: $colorWhite;
+    box-shadow: $boxShadowCard;
+
+    &:hover {
+      box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

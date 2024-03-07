@@ -1,0 +1,46 @@
+.map {
+  &__wrapper {
+    width: 100%;
+    max-width: $desktop-max-width;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  &__marker-wrapper {
+    position: absolute;
+    bottom: 10px;
+    left: -27px;
+    box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  &__marker {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: max-content;
+    padding: 10px;
+
+    border: 1px solid $colorBlack;
+    border-radius: 20px;
+    background-color: $colorWhite;
+
+    font-size: 14px;
+    font-style: italic;
+
+    &::before, &::after {
+      content: ''; 
+      position: absolute;
+      left: 20px; bottom: -20px;
+      border: 10px solid transparent;
+      border-top: 10px solid $colorBlack;
+    }
+
+    &::after {
+      border-top: 10px solid $colorWhite;
+      bottom: -19px; 
+    }
+  } 
+}

@@ -1,0 +1,38 @@
+.header {
+  &__wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    @include block-position;
+    padding: 20px 10px;
+  }
+
+  &__logo-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__logo {
+    display: block;
+  }
+
+  &__navigation {
+    display: block;
+    order: 3;
+  }
+
+  &__social {
+    display: block;
+
+    @media (max-width: $tablet-max-width) {
+      display: none;
+    }
+    @media (max-width: $mobile-max-width) {
+      order: 2;
+
+      display: block;
+    }
+  }
+}

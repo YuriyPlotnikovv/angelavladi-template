@@ -1,0 +1,21 @@
+@mixin block-position {
+  width: 100%;
+  max-width: $desktop-max-width;
+  margin: 0 auto;
+  padding: 30px 25px;
+
+  @media (max-width: $tablet-mid-width) {
+    padding: 20px 15px;
+  }
+}
+
+@mixin form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 500px;
+  }
+}

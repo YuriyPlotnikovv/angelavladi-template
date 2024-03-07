@@ -1,0 +1,23 @@
+.instructions {
+  &__wrapper {
+    @include block-position;
+  }
+
+  &__main-text {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__item {
+    padding: 15px;
+
+    border-radius: 10px;
+    background-color: $colorWhite;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+}

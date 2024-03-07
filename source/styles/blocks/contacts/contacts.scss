@@ -1,0 +1,14 @@
+.contacts {
+  &__info {
+    box-shadow: $boxShadow;
+  }
+
+  &__request {
+    background-color: $colorGrayTwo;
+    box-shadow: $boxShadow;
+  }
+  
+  &__map {
+    box-shadow: $boxShadow;
+  }
+}

@@ -1,0 +1,32 @@
+.price-detail {
+  &__wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__value {
+    position: relative;
+
+    display: flex;
+    padding-right: 40px;
+
+    font-size: 28px;
+    font-weight: 500;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      box-sizing: border-box;
+
+      display: block;
+      width: 30px;
+      height: 30px;
+
+      background-image: url("/images/icons/icon-ruble.png");
+      background-size: contain;
+
+      content: "";
+    }
+  }
+}

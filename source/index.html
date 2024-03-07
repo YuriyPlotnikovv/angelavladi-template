@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AngelaVladi - дизайнерская одежда г. Краснодар</title>
+  <meta name="description" content="Дизайнерская одежда AngelaVladi на заказ по вашим меркам и эскизам в г. Краснодар">
+  <link href="./styles/vendor/swiper-bundle.css" rel="stylesheet">
+  <link href="./styles/style.min.css" rel="stylesheet">
+</head>
+
+<body class="page__body">
+  @import "header.html"
+
+  <main class="page__main main">
+    <h1 class="visually-hidden">Главная страница</h1>
+
+    @import "slider-main.html"
+
+    <section class="main__catalog main-catalog">
+      <div class="main-catalog__wrapper">
+        <h2 class="visually-hidden">Категории одежды</h2>
+
+        <ul class="main-catalog__list">
+          @import "main-catalog-list-item.html"
+          @import "main-catalog-list-item.html"
+          @import "main-catalog-list-item.html"
+          @import "main-catalog-list-item.html"
+          @import "main-catalog-list-item.html"
+        </ul>
+
+        <a href="./catalog-index.html" class="main-catalog__link button button--link">Весь каталог</a>
+      </div>
+    </section>
+
+    <section class="main__info main-info">
+      <div class="main-info__wrapper">
+        <h2 class="visually-hidden">О бренде</h2>
+
+        <p class="main-info__text">Краткий текст о бренде</p>
+
+        <svg class="main-info__logo" viewBox="0 0 482 255" width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="images/sprite.svg#angelavladi-logo" />
+        </svg>
+
+        <a href="./order.html" class="main-info__link button button--link">Подробнее</a>
+      </div>
+    </section>
+
+    <section class="page__slider slider-promo">
+      <div class="slider-promo__wrapper slider swiper-container" data-slides data-autoplay>
+        <h2 class="slider-promo__title">Вам могут понравиться:</h2>
+
+        <ul class="slider-promo__list slider__list swiper-wrapper">
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="main__order main-order">
+      <div class="main-order__wrapper">
+        <h2 class="main-order__title">Как сделать заказ?</h2>
+
+        <p class="main-order__text">Краткий текст про заказ</p>
+
+        <a href="./order.html" class="main-order__link button button--link">Подробнее</a>
+      </div>
+    </section>
+  </main>
+
+  @import "footer.html"
+
+  <script src="./scripts/vendor/swiper-bundle.js"></script>
+  <script src="./scripts/script.min.js"></script>
+</body>
+
+</html>

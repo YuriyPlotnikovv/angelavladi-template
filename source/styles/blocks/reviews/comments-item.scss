@@ -1,0 +1,14 @@
+.comments-item {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    font-style: italic;
+  }
+  
+  &__text {
+    font-size: 22px;
+  }
+}

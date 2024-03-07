@@ -1,0 +1,45 @@
+.contacts-social {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__link {
+    position: relative;
+
+    display: flex;
+    padding: 5px 5px 5px 30px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 35px;
+      height: 35px;
+    }
+
+    &.vk {
+      &::before {
+        content: $iconVk;
+      }
+    }
+
+    &.telegram {
+      &::before {
+        content: $iconTelegram;
+      }
+    }
+
+    &.instagram {
+      &::before {
+        content: $iconInsta;
+      }
+    }
+  }
+
+  &__link-text {
+    padding-left: 10px;
+  }
+}

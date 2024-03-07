@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Товар детально | AngelaVladi - дизайнерская одежда г. Краснодар</title>
+  <meta name="description"
+    content="Каталог дизайнерской одежды, дизайнерская одежда AngelaVladi на заказ по вашим меркам и эскизам в г. Краснодар">
+  <link href="./styles/vendor/swiper-bundle.css" rel="stylesheet">
+  <link href="./styles/style.min.css" rel="stylesheet">
+</head>
+
+<body class="page__body">
+
+  @import "header.html"
+
+  <main class="page__main detail">
+    <section class="page__heading heading">
+      <div class="heading__wrapper">
+        <h1 class="heading__title">Товар детально</h1>
+
+        @import "breadcrumbs.html"
+      </div>
+    </section>
+
+    <section class="detail__content">
+
+      <div class="detail__wrapper">
+        @import "slider-catalog-detailed.html"
+
+        <div class="detail__content-wrapper">
+          <h2 class="detail__title">Полное название товара</h2>
+          <p class="detail__text">Подробное описание товара</p>
+
+          <div class="detail__consist consist">
+            <h3 class="consist__title">Материалы:</h3>
+
+            <ul class="consist__list">
+              <li class="consist__item">материал</li>
+
+              <li class="consist__item">материал</li>
+
+              <li class="consist__item">материал</li>
+            </ul>
+          </div>
+
+          <div class="detail__colors colors-detail">
+            <h3 class="colors-detail__title">Цветовые варианты:</h3>
+
+            <ul class="colors-detail__colors colors">
+              <li class="colors__item colors__item--white"></li>
+              <li class="colors__item colors__item--red"></li>
+              <li class="colors__item colors__item--black"></li>
+              <li class="colors__item colors__item--yellow"></li>
+            </ul>
+          </div>
+
+          <div class="detail__price price-detail">
+            <h3 class="price-detail__title">Стоимость:</h3>
+
+            <div class="price-detail__wrapper">
+              <span class="price-detail__label">от</span>
+
+              <span class="price-detail__value">5000</span>
+            </div>
+          </div>
+
+          <a href="" class="detail__link button button--link">Как оформить заказ?</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page__slider slider-promo">
+      <div class="slider-promo__wrapper slider swiper-container" data-slides data-autoplay>
+        <h2 class="slider-promo__title">Вам могут понравиться:</h2>
+
+        <ul class="slider-promo__list slider__list swiper-wrapper">
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+          @import "slider-promo-item.html"
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  @import "footer.html"
+
+  <script src="./scripts/vendor/swiper-bundle.js"></script>
+  <script src="./scripts/script.min.js"></script>
+</body>
+
+</html>

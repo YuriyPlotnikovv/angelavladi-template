@@ -1,0 +1,23 @@
+.slider-thumbs {
+  &__item {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    height: 150px;
+
+    border-radius: 10px;
+    background-color: $colorWhite;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: $tablet-max-width) {
+      height: 100px;
+    }
+  }
+}

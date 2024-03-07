@@ -1,0 +1,70 @@
+.footer {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include block-position;
+    padding: 20px 10px;
+
+    @media (max-width: $tablet-max-width) {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 0;
+    }
+  }
+
+  &__contacts-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    @media (max-width: $tablet-max-width) {
+      padding-left: 50px;
+    }
+    @media (max-width: $mobile-max-width) {
+      justify-self: center;
+      padding: 0;
+    }
+  }
+
+  &__social {
+    @media (min-width: $desktop-min-width) {
+      justify-self: center;
+    }
+  }
+
+  &__contacts {
+    @media (min-width: $desktop-min-width) {
+      justify-self: center;
+    }
+  }
+
+  &__navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: $mobile-max-width) {
+      display: block;
+      justify-self: center;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+
+    @media (max-width: $tablet-max-width) {
+      grid-column: 1 / 3;
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 10px;
+
+      border-top: 1px solid $colorRed;
+    }
+    @media (max-width: $mobile-max-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px 30px;
+    }
+  }
+}

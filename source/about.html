@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Обо мне | AngelaVladi - дизайнерская одежда г. Краснодар</title>
+  <meta name="description"
+    content="Обо мне и бренде AngelaVladi, дизайнерская одежда AngelaVladi на заказ по вашим меркам и эскизам в г. Краснодар">
+  <link href="./styles/vendor/swiper-bundle.css" rel="stylesheet">
+  <link href="./styles/style.min.css" rel="stylesheet">
+</head>
+
+<body class="page__body">
+
+  @import "header.html"
+
+  <main class="page__main about">
+    <section class="page__heading heading">
+      <div class="heading__wrapper">
+
+        <h1 class="heading__title">Обо мне и бренде AngelaVladi</h1>
+
+        @import "breadcrumbs.html"
+      </div>
+    </section>
+
+
+    <section class="about__info about-info">
+      <div class="about-info__wrapper">
+        <div class="about-info__content">
+          <div class="about-info__block-designer">
+            <h2 class="visually-hidden">Обо мне</h2>
+            <p class="about-info__text">инфа о дизайнере</p>
+          </div>
+
+          <svg class="about-info__logo" viewBox="0 0 100 50" width="500" height="250"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="images/sprite.svg#angelavladi-logo" />
+          </svg>
+
+          <div class="about-info__block-brand">
+            <h2 class="visually-hidden">О бренде</h2>
+            <p class="about-info__text">инфа о бренде</p>
+          </div>
+        </div>
+
+        @import "slider-about.html"
+      </div>
+    </section>
+  </main>
+
+  @import "footer.html"
+
+  <script src="./scripts/vendor/swiper-bundle.js"></script>
+  <script src="./scripts/script.min.js"></script>
+</body>
+
+</html>

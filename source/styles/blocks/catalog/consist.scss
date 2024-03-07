@@ -1,0 +1,14 @@
+.consist {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+  }
+
+  &__item {
+    list-style-type: '#';
+
+    padding-left: 10px;
+  }
+}

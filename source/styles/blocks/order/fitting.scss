@@ -1,0 +1,5 @@
+.fitting {
+  &__wrapper {
+    @include block-position;
+  }
+}

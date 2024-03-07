@@ -1,0 +1,69 @@
+.sections {
+  &__wrapper {
+    @include block-position;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+
+    flex-shrink: 1;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    @media (max-width: $tablet-max-width) {
+      height: 250px;
+    }
+
+    @media (max-width: $tablet-mid-width) {
+      height: 150px;
+    }
+
+    &:hover {
+      transform: scale(1.015);
+      transition: 0.4s;
+    }
+
+    &-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      transform: translate(-50%, -50%);
+
+      display: block;
+      width: max-content;
+      margin: auto;
+
+      font-size: 20px;
+      font-weight: 500;
+      color: $colorWhite;
+      text-transform: uppercase;
+
+      @media (max-width: $tablet-max-width) {
+        font-size: 16px;
+      }
+    }
+    
+    &-image {
+      object-fit: cover;
+      filter: brightness(70%);
+    }
+  }
+}

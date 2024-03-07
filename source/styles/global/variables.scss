@@ -1,0 +1,64 @@
+/* fonts */
+
+$font-main: 'ProximaNova', Arial, sans-serif;
+
+/* colors */
+
+$colorBlack: #000000;
+$colorBlackTwo: #111111;
+$colorBlackThree: #333333;
+
+$colorGray: #757575;
+$colorGrayTwo: #fafafa;
+$colorGrayThree: #d1d1d9;
+
+$colorWhite: #ffffff;
+
+$colorRed: #ff2e17;
+$colorYellow: yellow;
+
+$colorBlackTrans: rgba(0, 0, 0, 0.3);
+
+/* shadows */
+
+$boxShadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.1);
+$boxShadowCard: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+$boxShadowCardHover: 0 4px 8px 0px rgba(0, 0, 0, 0.1);
+
+$buttonShadow: 
+0 1px rgba(255, 255, 255, 0.2) inset,
+0 3px 5px rgba(0, 1, 6, 0.5),
+0 0 1px 1px rgba(0, 1, 6, 0.2);
+
+$buttonShadowActive: 
+0 0 1px rgba(0, 0, 0, 0.5) inset,
+0 2px 3px rgba(0, 0, 0, 0.5) inset,
+0 1px 1px rgba(255, 255, 255, 0.1);
+
+$textShadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+
+/* gradients */
+
+$buttonGradient: linear-gradient(rgb(110, 112, 120), rgb(81, 81, 86)) rgb(110, 112, 120);
+$buttonGradientHover: linear-gradient(rgb(126, 126, 134), rgb(70, 71, 76)) rgb(126, 126, 134);
+$buttonGradientActive: linear-gradient(rgb(76, 77, 82), rgb(56, 57, 62)) rgb(76, 77, 82);
+
+/* media-widths */
+
+$mobile-min-width: 480px;
+$mobile-max-width: 767px;
+$tablet-min-width: 768px;
+$tablet-mid-width: 970px;
+$tablet-max-width: 1279px;
+$desktop-min-width: 1280px;
+$desktop-max-width: 1920px;
+
+/* icons */
+
+$iconVk: url("../images/icons/icon-vk.svg");
+$iconTelegram: url("../images/icons/icon-telegram.svg");
+$iconInsta: url("../images/icons/icon-instagram.svg");
+$iconMenu: url("../images/icons/icon-menu.svg");
+$iconClose: url("../images/icons/icon-close.svg");
+$iconRuble: url("/images/icons/icon-ruble.png");
+$iconArrow: url("../images/icons/icon-arrow.png");

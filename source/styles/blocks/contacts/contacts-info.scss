@@ -1,0 +1,33 @@
+.contacts-info {
+  &__wrapper {
+    @include block-position;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+    @media (max-width: $tablet-mid-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    grid-column: 1 / 3;
+  }
+
+  &__phone-list {
+    display: flex;
+    gap: 30px;
+    justify-self: center;
+  }
+
+  &__phone-link {
+    display: block;
+  }
+
+  &__social {
+    justify-self: center;
+  }
+}

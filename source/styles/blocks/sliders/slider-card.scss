@@ -1,0 +1,9 @@
+.slider-card {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+    
+  &__item {
+    height: 250px;
+  }
+}
