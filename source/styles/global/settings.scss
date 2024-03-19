@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-width: $mobile-min-width;
+  min-width: 320px;
 
   font-family: $font-main;
   font-size: 18px;
